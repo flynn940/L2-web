@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color:grey;
     padding: 0;
     margin: 0;
 }
@@ -15,44 +15,53 @@ header {
     height: 100px
 }
 
-nav {
-    background-color: gray;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 15px;
-    
+nav  {
+    background-color: grey;
     color: white;
 }
-
-nav ul {
-    width: 100%;
-    margin: auto;
+nav ul li {
+    display: inline-block;
+  
+    margin: 0 4%;
 }
 
+
+nav ul{
+    width: 80%;
+    margin: auto;
+    
+}
 nav ul li a {
-    display: block; 
-    padding: 15px; 
-    color: white; 
-    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+li a:hover {
+    background-color: white;
+    color: grey;
 }
 
 nav li ul {
     padding: 0px;
     position: absolute;
     margin-left: -20px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 nav li ul li {
-    display: ;
+    display: block;
+  
+    width: 20%;
+    background-color: rgba(o, 0, 0, 0.6);
 }
 
-li a:hover {
-    background-color: green;
-    color: orange; 
+.hidden {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+nav li:hover .hidden {
+    opacity: 1;
 }
 
 footer {
